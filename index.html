@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Segitiga</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+
+    <!-- Awal Header Logo -->
+    <header id="logoku" class="loggo" >
+        <h3 id="logo" class="abc" >
+            TUGAS REVOU 2
+        </h3>
+        </header>
+    <!-- Akhir Header Logo -->
+
+    <!-- Awal Nav Menu -->
+        <nav>
+        <ul>
+        
+            <li style="float:right" ><button type="button" ><a class="active" href="#keterangan2 " style="background-color: #86B6F6 "> Luas Segitiga</a></button></li>
+            <li style="float:right"><button type="button" ><a class="active" href=" #keterangan1" style="background-color: #B80000 "> Keliling Segitiga</a></button></li>
+            
+        </ul>
+        <hr>
+        </nav>
+    <!-- Akhir Nav Menu-->
+
+    <br><br><br><br>
+
+    <!-- Awal Section Keliling Segitiga-->
+    <Section>
+     <h4 id="keterangan1">
+            KELILING SEGITIGA
+            <br><br>
+        <div class="gambarkelilingsegitiga" style="text-align: center;">
+            <a target="" href="">
+                <img src="./assets/kelilingsegitiga1.png" alt="Forest" width="200" height="200" >
+            </a>
+
+            <h6 style="text-align: left;" id="kelilingsegitiga" class="text" > RUMUS MENGHITUNG KELILING SEGITIGA</h6>
+            <h6 style="text-align: left;" class="yoo">
+            <p> Keliling Segitiga = Sisi + Sisi + Sisi</p>
+            <br><br>
+            <p> KETERANGAN</p>
+                <li>Dalam Menghitung Keliling Segitiga Setiap Sisinya Sama</li>
+            </h6>
+            <br>
+            <h6 style="text-align: left;" class="text">
+                <p>INPUT SISI SEGITIGA</p>
+            </h6>
+        </div>  
+     </h4>
+    </Section>
+    </header>
+    <main id="input-Keliling">
+        <fieldset>
+        <p class="__web-inspector-hide-shortcurt__">
+        <label for="input-sisi-satu">SISI 1</label> <br>
+            <input type="number" id="input-sisi-satu" class="sisi">
+        <br><br>
+        <label for="input-sisi-dua">SISI 2</label> <br>
+            <input type="number" id="input-sisi-dua" class="sisi">
+        <br><br>
+        <label for="input-sisi-tiga">SISI 3</label><br>
+            <input type="number" id="input-sisi-tiga" class="sisi">
+        </p>
+        </fieldset>
+
+        <!-- awal wadah untuk menampilkan hasil perhitungan keliling segitiga yang dibuat di JS-->
+        <h4 id="output-keliling"></h4>
+        <!-- akhir wadah untuk menampilkan hasil perhitungan keliling segitiga yang dibuat di JS-->
+        <br>
+        <!-- awal membuat button hitung dan reset yang apabila di klik akan mengeksekusi proses perhitungan keliling-->
+        <div class="buttons1">
+            <button onclick="HitungKeliling()" class="btn2"  >Hitung</button>
+            <button onclick="ResetKeliling()"  class="btn2" >Reset</button>
+        </div>
+        <!-- awal membuat button hitung dan reset yang apabila di klik akan mengeksekusi proses perhitungan keliling-->
+    </main>
+    <!-- Akhir Section Keliling Segitiga -->
+
+    <br><br><br><br>
+
+    <!-- Awal Section Luas Segitiga -->
+    <Section>
+        <h4 id="keterangan2">
+            LUAS SEGITIGA
+            <br><br>
+        <div class="gambarluassegitiga" style="text-align: center;">
+            <a target="" href="">
+                <img src="./assets/LuasSegitiga.png" alt="Forest" width="200" height="200" >
+            </a>
+
+            <h6 style="text-align: left;" id="kelilingsegitiga" class="text"> RUMUS MENGHITUNG LUAS SEGITIGA</h6>
+            <h6 style="text-align: left;" class="yoo2">
+                <p> Luas Segitiga = 1/2 x BC x AO</p>
+                    <br><br>
+                <p> KETERANGAN</p>
+                    <li> Dalam Menghitung Luas Segitiga </li>
+                    <li> BC = Sebagai Alas</li>
+                    <li> AO = Sebagai Tinggi</li>
+            </h6>
+            <br>
+            <h6 style="text-align: left;" class="text">
+                <p>INPUT SISI SEGITIGA</p>
+            </h6>
+        </div>  
+        </h4>
+        </Section>
+    </header>
+    <main id="input-Luas">
+        <fieldset>
+            <p class="__web-inspector-hide-shortcurt__">
+            <label for="alas">ALAS </label><br>
+             <input type="number" id="masukanalas" class="sisi">
+        <br><br>
+            <label for="tinggi">TINGGI</label><br>
+             <input type="number" id="masukantinggi" class="sisi">
+            </p>
+        </fieldset>
+
+    <!-- awal wadah untuk menampilkan hasil perhitungan luas segitiga yang dibuat di JS-->
+        <h4 id="output-luas"></h4>
+    <!-- akhir wadah untuk menampilkan hasil perhitungan luas segitiga yang dibuat di JS-->
+
+    <br>
+    <!-- awal membuat button hitung dan reset yang apabila di klik akan mengeksekusi proses perhitungan luas-->
+    <div class="button2">
+        <button onclick="HitungLuas()" type="button"  class="btn2">Hitung</button>
+        <button onclick="ResetLuas()" type="button"  class="btn2">Reset</button>
+    </div>
+    <!-- akhir membuat button hitung dan reset yang apabila di klik akan mengeksekusi proses perhitungan luas-->
+
+    </main>
+    <!-- Akhir Section Luas Segitiga -->
+
+    <br><br><br><br>
+
+    <!-- Awal Footer -->
+
+    <div style="background-color: #C3E2C2" >
+        <h2 style="text-align: center;"> Sekian Terima Kasih </h2>
+        
+      </div>
+
+    <!-- Akhir Footer-->
+
+</body>
+</html>
